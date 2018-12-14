@@ -5,4 +5,4 @@ ADD . /home/seabiscuit/racecourse
 #USER seabiscuit
 WORKDIR /home/seabiscuit/racecourse
 RUN cd client; npm install; npm run build; cd ..; cd server; npm install;
-ENTRYPOINT npm run start
+ENTRYPOINT node server.js
